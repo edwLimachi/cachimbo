@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+#galeria{
+  max-width: 1300px;
+  display: flex;
+}
+
+header {
+  font-size: 70px;
+  text-align: center;
+  text-shadow: 3px 20px 20px black;
+  background: #2ABB9B;
+  width: 100%;
+  /*margin-top: 200px;*/
+  /*height: 200px;*/
+  box-shadow: 0px 5px 10px #000;
+  font-family: 'Lobster', cursive;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.cuadro {
+  border: 8px ridge sienna;
+  box-shadow: 5px 5px 10px #000;
+  width: 250px;
+  height: 390px;
+}
+
+.std {
+  border: 8px ridge sienna;
+  box-shadow: 5px 5px 10px #000;
+  height: 390px;
+  transition: all 2s linear;
+}
+
+.std:hover {
+  filter: sepia(1);
+  transition: all 2s linear;
+}
+
+.cuadro:hover {
+  filter: sepia(1);
+  transition: all 2s linear;
+}
+
+#sill {
+  max-width: 100%;
+  height: auto;
+}
+
+.vng {
+  border: 8px ridge sienna;
+  box-shadow: 5px 5px 10px #000;
+  height: 330px;
+  transition: all 2s linear;
+}
+
+.vng:hover {
+  filter: sepia(1);
+  transition: all 2s linear;
+}
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 40px;
+  background: #2ABB9B;
+  width: 100%;
+  height: 200px;
+  box-shadow: 0px 5px 10px #000 inset;
+  text-align: center;
+}
+
+.fa-github,
+.fa-twitter {
+  color: black;
+  font-size: 30px;
+}
+
