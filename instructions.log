@@ -1,0 +1,9 @@
+-version 1.0 web pages EPIS-
+
+Pasos para el funcionamiento correcto de la pagina epis 2018
+
+--1) Importar la base de datos "epis_bd_2018.sql" se encuentra en la raiz
+--2) Para entrar al inicio de sesion url: localhost/episUpt/login.php (usuario y contraseña es : admin)
+--3) Para ingresar directamente a la bandeja de entrada url localhost/episUpt/administrativePanel.php
+
+
