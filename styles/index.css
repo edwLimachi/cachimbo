@@ -1,5 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
 body {
   margin: 0;
+  font-family: 'Bungee';
 }
 
 h1 {
@@ -15,10 +18,10 @@ header {
   font-size: 70px;
   text-align: center;
   text-shadow: 3px 20px 20px black;
-  background: #2ABB9B;
+  background: #000;
   width: 100%;
-  /*margin-top: 200px;*/
-  /*height: 200px;*/
+  margin-top: 23px;
+  height: 144px;
   box-shadow: 0px 5px 10px #000;
   font-family: 'Lobster', cursive;
 }
@@ -85,4 +88,51 @@ footer {
   color: black;
   font-size: 30px;
 }
+
+.titulo{
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.container_heaader {
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+.container_imagen1 {
+    width: 33.3%;
+    height: 85%;
+    margin: auto;
+}
+
+img.logo {
+  width: 27%;
+  border: 10px dashed #dcc200;
+
+}
+
+img.logo2 {
+  width: 41%;
+  border: 10px dashed #dcc200;
+
+}
+
+.container_imagen11 {
+    height: 100%;
+}
+
+canvas#canvas {
+    margin-top: -18px;
+}
+.container_cuadro{
+  width: 25%;
+}
+.container_ruleta{
+  width: 31%;
+}
+.container_castigo{
+  width: 19%;
+}
+
 

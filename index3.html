@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cachimbos</title>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Epis project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/index2.css">
+<link rel="stylesheet" type="text/css" href="styles/index.css">
+<style type="text/css">
+  .caja{
+    width: 430px;
+    height: 300px;
+    border: 1px solid red;
+    float: left;
+    margin:15px;
+    text-align:left;
+    border:#333 solid 1px;
+    border-radius:10px;
+    margin-left: 150px;
+    position:relative
+
+  }
+  #foot {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 40px;
+  background: #2ABB9B;
+  width: 100%;
+  height: 350px;
+  box-shadow: 0px 5px 10px #000 inset;
+  text-align: center;
+
+
+}
+a:link
+{
+text-decoration:none;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Bienvenida Cachimbo ci</h1>
+</header>
+<section>
+	<article>
+    <ul id="galeria">
+
+		<div>
+    		<button href="index.php" class="btn first" >Video</button>
+    		<li id="verificado"></li>
+  		</div>
+  		<div>
+   			<a href="index.php?variable1=1" > <button class="btn first" >Diurno</button></a> 
+       		 <!-- <li id="verificado2"></li>
+    		<li id="verificado2"></li> -->
+  		</div>
+      <div>
+        <a href="index.php?variable1=2" ><button class="btn first" >Nocturno</button></a> 
+           <!-- <li id="verificado2"></li>
+        <li id="verificado2"></li> -->
+      </div>
+      <div>
+        <a href="index.php?variable1=3" ><button class="btn first" >GENERAL</button></a> 
+           <!-- <li id="verificado2"></li>
+        <li id="verificado2"></li> -->
+      </div>
+
+    </ul>
+	</article>
+</section>
+<footer id="foot">
+  <div class="caja">
+    <iframe width="500" height="315" src="video/segundo.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="caja">
+    <img class='std' src='images/anonimato_cachimbo.jpg' alt='' style='width: 265px;height: 300px;'>
+  </div>
+  <div class="caja">
+    <img class='std' src='images/anonimato_cachimbo.jpg' alt='' style='width: 265px;height: 300px;'>
+  </div>
+
+
+</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/index.js"></script>
+<!-- <script src="styles/bootstrap4/popper.js"></script> -->
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+  
+    function verificar1(){        
+
+      var numal=numeroAleatorio(1, 30);
+
+      function numeroAleatorio(min, max) {
+          return Math.round(Math.random() * (max - min) + min);
+      }
+
+      console.log(numal);
+      
+      $.post("php/check.php", { 'numal': numal }, function(data){
+        $("#verificado").html(data);
+      });     
+    }
+
+    function verificar2(){        
+
+      var numal=numeroAleatorio(100, 105);
+
+      function numeroAleatorio(min, max) {
+          return Math.round(Math.random() * (max - min) + min);
+      }
+
+      $.post("php/check2.php", { 'numal': numal }, function(data){
+
+      $("#verificado2").html(data);
+      });     
+    }
+
+    function verificar3(){        
+
+      var numal=numeroAleatorio(100, 105);
+
+      function numeroAleatorio(min, max) {
+          return Math.round(Math.random() * (max - min) + min);
+      }
+
+      $.post("php/check2.php", { 'numal': numal }, function(data){
+
+      $("#verificado2").html(data);
+      });     
+    }
+</script>
+
+
+
+</body>
+</html>

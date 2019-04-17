@@ -63,6 +63,9 @@ INSERT INTO `estudiantes` (`id`, `nombre`) VALUES
 (2, 'ESTUDIANTE2'),
 (3, 'ESTUDIANTE3'),
 (4, 'ESTUDIANTE4');
+(5, 'ESTUDIANTE5'),
+
+
 
 -- --------------------------------------------------------
 
@@ -85,6 +88,21 @@ INSERT INTO `estudiantes_cachimbos` (`id`, `nombre`) VALUES
 (3, 'CACHIMBO3'),
 (4, 'CACHIMBO4'),
 (5, 'CACHIMBO5');
+(6, 'CACHIMBO6'),
+(7, 'CACHIMBO7'),
+(8, 'CACHIMBO8'),
+(9, 'CACHIMBO9'),
+(10, 'CACHIMB10');
+(11, 'CACHIMBO11'),
+(12, 'CACHIMBO12'),
+(13, 'CACHIMBO13'),
+(14, 'CACHIMBO14'),
+(15, 'CACHIMBO15');
+(16, 'CACHIMBO16'),
+(17, 'CACHIMBO17'),
+(18, 'CACHIMBO18'),
+(19, 'CACHIMBO19'),
+(20, 'CACHIMB20');
 
 --
 -- Índices para tablas volcadas
