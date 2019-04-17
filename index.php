@@ -1,13 +1,9 @@
  <?php 
 
-require('php/connection.php');
-    $conexion = getCon();
-    
     if(isset($_GET['variable1'])) $variable1 =strtoupper($_GET['variable1']); else $variable1="";
-    echo $variable1;
+    //echo $variable1;
 
 ?> 
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,6 +52,7 @@ require('php/connection.php');
   </div>
 
 </header>
+
 <ul id="galeria">
   <div class="container_cuadro">      
     <button class="btn first" onclick="verificar();">CACHIMBO ELEGIDO</button>    
@@ -112,15 +109,29 @@ require('php/connection.php');
 </ul>
 
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/index.js"></script>
+<script src="js/index.js"></script>
 <!-- <script src="styles/bootstrap4/popper.js"></script> -->
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<!-- <script src="styles/bootstrap4/bootstrap.min.js"></script> -->
 
 
     <script type="text/javascript">
-      function verificar(){        
 
-        var numal=numeroAleatorio(1, 30);
+      function verificar(){   
+
+        var number = '<?php echo $variable1;?>';     
+        
+        if (number==1) {
+
+          var numal=numeroAleatorio(1, 30);       
+
+        }else if (number==2) {
+
+          var numal=numeroAleatorio(31, 60);   
+
+        }else{
+
+          var numal=numeroAleatorio(1, 60);   
+        }
 
         function numeroAleatorio(min, max) {
             return Math.round(Math.random() * (max - min) + min);
@@ -130,18 +141,32 @@ require('php/connection.php');
         
         $.post("php/check.php", { 'numal': numal }, function(data){
           $("#verificado").html(data);
-        });     
+        }); 
+         
       }
 
       function verificar2(){        
 
-        var numal=numeroAleatorio(100, 105);
+        var number = '<?php echo $variable1;?>';     
+        
+        if (number==1) {
+
+          var numal=numeroAleatorio(100, 130);       
+
+        }else if (number==2) {
+
+          var numal=numeroAleatorio(131, 160);   
+
+        }else{
+
+          var numal=numeroAleatorio(100, 60);   
+        }
 
         function numeroAleatorio(min, max) {
             return Math.round(Math.random() * (max - min) + min);
         }
 
-        $.post("php/check2.php", { 'numal': numal }, function(data){
+        $.post("php/check.php", { 'numal': numal }, function(data){
 
         $("#verificado2").html(data);
         });     
