@@ -13,6 +13,7 @@ body {
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  background: #dcc200;
 }
 h1 {
   color: #f1c40f;
@@ -74,3 +75,4 @@ p {
 .third:hover {
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
+

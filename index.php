@@ -1,7 +1,7 @@
- <?php 
+<?php 
 
     if(isset($_GET['variable1'])) $variable1 =strtoupper($_GET['variable1']); else $variable1="";
-    //echo $variable1;
+    echo $variable1;
 
 ?> 
 
@@ -19,14 +19,6 @@
 
 <script type="text/javascript" src="js/TweenMax.min.js"></script>
 <script type="text/javascript" src="js/Winwheel.min.js"></script>
-
-<style type="text/css">
-  a:link
-    {
-    text-decoration:none;
-    }
-</style>
-
 
 </head>
 <body>
