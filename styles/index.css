@@ -47,12 +47,12 @@ li {
 }
 
 .std:hover {
-  filter: sepia(1);
+  /*filter: sepia(1);*/
   transition: all 2s linear;
 }
 
 .cuadro:hover {
-  filter: sepia(1);
+  /*filter: sepia(1);*/
   transition: all 2s linear;
 }
 
@@ -69,7 +69,7 @@ li {
 }
 
 .vng:hover {
-  filter: sepia(1);
+  /*filter: sepia(1);*/
   transition: all 2s linear;
 }
 
@@ -159,9 +159,11 @@ canvas#canvas {
     }
     .caja2{    
       height: 300px;
+      width: 400px;
     }
     .caja3{    
       height: 300px;
+      width: 400px;
     }
 
     #foot {
